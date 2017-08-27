@@ -19,17 +19,13 @@ public class MainFrame extends JFrame {
     public MainFrame(String name) {
 
         super(name);
-        //�г� ��ü ����
         leftPanel = new LeftPanel();
         bottomLabel = new BottomLabel("Start");
         topPanel = new TopPanel();
 
-        //�г� ��ġ�� ����
-
         this.add(leftPanel, BorderLayout.WEST);
         this.add(bottomLabel, BorderLayout.SOUTH);
         this.add(topPanel, BorderLayout.NORTH);
-        //�޴� ����
         menuBar = new TopMenu();
         this.setJMenuBar(menuBar);
         this.add(MainDesktopPane.getInstance());

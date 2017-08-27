@@ -26,7 +26,6 @@ public class DrawInternalFrame extends JInternalFrame {
                     //Copy Current Figure
                     if (Information.getCurrentFigure() != null) {
                         FigureBuffer.getInstance().replaceBuffer(Information.getCurrentFigure());
-                        System.out.println("��ü ī��!");
 
                     } else {
                         JOptionPane.showMessageDialog(null, "Error : Cant' find Figure", "ERROR", JOptionPane.ERROR_MESSAGE);
@@ -39,7 +38,6 @@ public class DrawInternalFrame extends JInternalFrame {
                         if (Information.getCurrentJPanel() != null) {
                             Information.getCurrentJPanel().addVector((Vector<Figure>) FigureBuffer.getInstance().gerBuffer().clone());
                             FigureBuffer.getInstance().clearBuffer();
-                            System.out.println("��ü �ٿ��ֱ�!");
                         }
 
                     } else {
