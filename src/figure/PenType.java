@@ -72,6 +72,3 @@ public abstract class PenType extends Figure {
         }
     }
 }
-
-	
-
